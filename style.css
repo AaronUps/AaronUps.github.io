@@ -1,84 +1,161 @@
-/* Page Colour */
-body {
-    font-family: Arial, sans-serif;
-    background-colour: lightgray;
+/* ===========================
+   GLOBAL RESET
+=========================== */
+* {
+    box-sizing: border-box;
     margin: 0;
-    colour: black;
-}
-
-/* Header Colour */
-header {
-    background-colour: maroon;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-header img {
-    width: 50px;
-    vertical-align: middle;
-}
-
-header h1 {
-    margin: 10px 0;
-}
-
-header p {
-    margin: 0;
-    font-style: italic;
-}
-
-/* Section Colours */
-section {
-    width: 80%;
-    margin: 30px auto;
-}
-
-/* Section Titles */
-h2 {
-    colour: maroon;
-    border-bottom: 2px solid maroon;
-    padding-bottom: 5px;
-}
-
-/* Background Card Colours */
-.card {
-    background-color: white;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-}
-
-/* Skill List */
-.skills-list {
-    list-style: none;
     padding: 0;
 }
 
-.skills-list li {
-    display: inline-block;
-    background-colour: maroon;
-    color: white;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 5px;
+/* ===========================
+   BODY
+=========================== */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
 }
 
-/* The Link Colour */
+/* ===========================
+   LINKS
+=========================== */
 a {
-    colour: maroon;
+    color: maroon;
+    font-weight: bold;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    opacity: 0.7;
 }
 
-/* Bottom Of the Fottor Colour */
+/* ===========================
+   HEADER
+=========================== */
+header {
+    background-color: white;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 2px solid maroon;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 0.95rem;
+    color: gray;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: maroon;
+    border-bottom: 2px solid maroon;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+/* ===========================
+   CARD STYLE
+=========================== */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px gray;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    color: maroon;
+}
+
+.card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* ===========================
+   CARD GRID
+=========================== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* ===========================
+   SKILLS TAGS
+=========================== */
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background-color: maroon;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
 footer {
     text-align: center;
-    padding: 15px;
-    background-colour: maroon;
-    color: white;
-    margin-top: 30px;
+    padding: 20px;
+    border-top: 2px solid maroon;
+    font-size: 0.85rem;
+    color: gray;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
 }
