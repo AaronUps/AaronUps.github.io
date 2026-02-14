@@ -1,40 +1,32 @@
-/* ===========================
-   GLOBAL RESET
-=========================== */
+/* == The global HTML file == */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* ===========================
-   BODY
-=========================== */
+/* == Body Text == */
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-colour: white;
+    background-color: white;
     color: black;
 }
 
-/* ===========================
-   LINKS
-=========================== */
+/* == Link for the websites == */
 a {
-    colour: maroon;
+    color: maroon;
     font-weight: bold;
     text-decoration: none;
 }
 
-a: hover {
+a:hover {
     opacity: 0.7;
 }
 
-/* ===========================
-   HEADER
-=========================== */
+/* == Header Section == */
 header {
-    background-colour: white;
+    background-color: white;
     border-bottom: 2px solid maroon;
     padding: 40px 20px;
     text-align: center;
@@ -65,13 +57,11 @@ header h1 {
 }
 
 header p {
-    colour: gray;
+    color: gray;
     font-size: 1rem;
 }
 
-/* ===========================
-   SECTIONS
-=========================== */
+/* == Seperating the section == */
 section {
     max-width: 800px;
     margin: 50px auto;
@@ -80,41 +70,36 @@ section {
 
 h2 {
     font-size: 1.6rem;
-    colour: maroon;
+    color: maroon;
     border-bottom: 2px solid maroon;
     padding-bottom: 6px;
     margin-bottom: 25px;
 }
 
-/* ===========================
-   CARD GRID (VERTICAL ONLY)
-=========================== */
+/* == Organizing the Cards == */
 .card-grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* ===========================
-   CARD STYLE
-=========================== */
+/* == Cards for each section ==  */
 .card {
-    background-colour: white;
+    background-color: white;
     padding: 22px;
     border-radius: 14px;
     box-shadow: 0 4px 10px gray;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* subtle Apple-like hover */
-.card: hover {
+.card:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 18px gray;
 }
 
 .card h3 {
     margin-bottom: 8px;
-    colour: maroon;
+    color: maroon;
 }
 
 .card p {
@@ -126,9 +111,7 @@ h2 {
     padding-left: 20px;
 }
 
-/* ===========================
-   SKILLS TAGS
-=========================== */
+/* == Skill Section */
 .skills-list {
     list-style: none;
     display: flex;
@@ -137,27 +120,23 @@ h2 {
 }
 
 .skills-list li {
-    background-colour: maroon;
-    colour: white;
+    background-color: maroon;
+    color: white;
     padding: 6px 14px;
     border-radius: 999px;
     font-size: 0.9rem;
 }
 
-/* ===========================
-   ABOUT PARAGRAPH
-=========================== */
-#about p {
+/* == About Me == */
+#WhoIAm p {
     margin-top: 10px;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+/* == Footer Section == */
 footer {
     text-align: center;
     padding: 25px;
     border-top: 2px solid maroon;
     font-size: 0.85rem;
-    colour: gray;
+    color: gray;
 }
